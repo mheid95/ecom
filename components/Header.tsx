@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { FaBars, FaTimes, FaPhone, FaEnvelope } from 'react-icons/fa'
+import CartButton from './CartButton'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -42,18 +43,22 @@ export default function Header() {
             <Link href="/ueber-uns" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
               Über uns
             </Link>
+            <CartButton />
             <Link href="/kontakt" className="btn-primary">
               Kontakt
             </Link>
           </div>
 
           {/* Mobile menu button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-700 hover:text-primary-600"
-          >
-            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-          </button>
+          <div className="md:hidden flex items-center space-x-4">
+            <CartButton />
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-gray-700 hover:text-primary-600"
+            >
+              {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

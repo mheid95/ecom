@@ -6,16 +6,27 @@ Eine moderne, SEO-optimierte B2B E-Commerce-Website für professionelle Kaffeema
 
 ### 🎯 B2B-Fokussiert
 - Professionelle Produktkataloge für Kaffeemaschinen
+- Vollständiger Warenkorb mit Mengensteuerung
 - Individuelle Anfrageformulare
 - Mengenrabatt-Anzeigen
 - Leasing- und Finanzierungsoptionen
 - Branchenspezifische Lösungen
+
+### 💳 Payment Gateway Integration
+- **Stripe:** Kreditkartenzahlungen (Visa, Mastercard, Amex)
+- **PayPal:** Schnelle PayPal-Zahlungen
+- **Klarna:** "Jetzt kaufen, später zahlen" mit Ratenzahlungsoptionen
+- **Rechnung:** Klassische B2B-Rechnungszahlung
+- Sichere SSL-verschlüsselte Zahlungsabwicklung
+- Vollständiger Checkout-Flow mit Bestellbestätigung
 
 ### 🚀 Technologie-Stack
 - **Framework:** Next.js 14 (App Router)
 - **Sprache:** TypeScript
 - **Styling:** Tailwind CSS
 - **Icons:** React Icons
+- **Payments:** Stripe, PayPal, Klarna
+- **State Management:** React Context API
 - **SEO:** Optimierte Metadaten für alle Seiten
 
 ### 📱 Design & UX
@@ -27,7 +38,10 @@ Eine moderne, SEO-optimierte B2B E-Commerce-Website für professionelle Kaffeema
 
 ### 🎨 Seiten
 - **Home:** Hero Section, Features, Produktvorschau, Branchen, Testimonials
-- **Produkte:** Detaillierter Produktkatalog mit allen Kaffeemaschinen
+- **Produkte:** Detaillierter Produktkatalog mit "In den Warenkorb"-Funktion
+- **Warenkorb:** Übersichtliche Warenkorbverwaltung mit Mengensteuerung
+- **Checkout:** Umfassender Checkout mit Adresseingabe und Payment-Auswahl
+- **Bestellbestätigung:** Professionelle Bestätigungsseite mit Konfetti-Effekt
 - **Lösungen:** Branchenspezifische Kaffeelösungen
 - **Über uns:** Unternehmensgeschichte und Werte
 - **Kontakt:** Umfassendes Kontaktformular mit Anfrageoptionen
@@ -51,11 +65,46 @@ cd ecom
 # Dependencies installieren
 npm install
 
+# Umgebungsvariablen konfigurieren
+cp .env.example .env.local
+# Bearbeiten Sie .env.local und fügen Sie Ihre Payment-API-Keys hinzu
+
 # Entwicklungsserver starten
 npm run dev
 ```
 
 Die Website ist dann unter [http://localhost:3000](http://localhost:3000) erreichbar.
+
+## Payment Gateway Konfiguration
+
+### Stripe
+1. Erstellen Sie ein Konto bei [Stripe](https://stripe.com)
+2. Holen Sie sich Ihre API-Keys aus dem Dashboard
+3. Fügen Sie die Keys in `.env.local` ein:
+   ```
+   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
+   STRIPE_SECRET_KEY=sk_test_...
+   ```
+
+### PayPal
+1. Erstellen Sie ein Konto bei [PayPal Developer](https://developer.paypal.com)
+2. Erstellen Sie eine App im Dashboard
+3. Fügen Sie die Client-ID in `.env.local` ein:
+   ```
+   NEXT_PUBLIC_PAYPAL_CLIENT_ID=your_client_id
+   PAYPAL_CLIENT_SECRET=your_client_secret
+   ```
+
+### Klarna
+1. Registrieren Sie sich bei [Klarna Developers](https://developers.klarna.com)
+2. Erstellen Sie API-Credentials
+3. Fügen Sie die Credentials in `.env.local` ein:
+   ```
+   NEXT_PUBLIC_KLARNA_CLIENT_ID=your_client_id
+   KLARNA_API_KEY=your_api_key
+   ```
+
+**Hinweis:** Die Anwendung funktioniert auch im Demo-Modus ohne echte API-Keys. Zahlungen werden dann simuliert.
 
 ## Verfügbare Scripte
 
