@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FaFacebook, FaLinkedin, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaFacebook, FaLinkedin, FaInstagram, FaWhatsapp, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -15,14 +15,17 @@ export default function Footer() {
               Ihr zuverlässiger Partner für professionelle Kaffeemaschinen im B2B-Bereich.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-coffee-200 hover:text-primary-400 transition-colors">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-coffee-200 hover:text-primary-400 transition-colors" aria-label="Facebook">
                 <FaFacebook size={24} />
               </a>
-              <a href="#" className="text-coffee-200 hover:text-primary-400 transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-coffee-200 hover:text-primary-400 transition-colors" aria-label="LinkedIn">
                 <FaLinkedin size={24} />
               </a>
-              <a href="#" className="text-coffee-200 hover:text-primary-400 transition-colors">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-coffee-200 hover:text-primary-400 transition-colors" aria-label="Instagram">
                 <FaInstagram size={24} />
+              </a>
+              <a href="https://wa.me/4912345678" target="_blank" rel="noopener noreferrer" className="text-coffee-200 hover:text-green-400 transition-colors" aria-label="WhatsApp">
+                <FaWhatsapp size={24} />
               </a>
             </div>
           </div>

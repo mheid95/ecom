@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import ContactForm from '@/components/ContactForm'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
+import EnhancedContactForm from '@/components/EnhancedContactForm'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaWhatsapp } from 'react-icons/fa'
 
 export const metadata: Metadata = {
   title: 'Kontakt | Kostenlose Beratung für professionelle Kaffeemaschinen',
@@ -89,6 +89,19 @@ export default function KontaktPage() {
                     </div>
                   </div>
                 </div>
+
+                <div className="flex items-start">
+                  <div className="bg-green-100 p-3 rounded-lg mr-4">
+                    <FaWhatsapp className="text-green-600 text-xl" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-coffee-900 mb-1">WhatsApp Business</div>
+                    <a href="https://wa.me/4912345678" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">
+                      +49 (0) 123 456 78
+                    </a>
+                    <div className="text-sm text-gray-600 mt-1">Schnelle Antworten</div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -113,7 +126,7 @@ export default function KontaktPage() {
                 Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen mit einem individuellen Angebot.
               </p>
 
-              <ContactForm />
+              <EnhancedContactForm />
             </div>
           </div>
         </div>
