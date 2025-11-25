@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { FaCheckCircle, FaEnvelope, FaPhone, FaFileInvoice, FaHome } from 'react-icons/fa'
@@ -10,7 +10,6 @@ function OrderConfirmationContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const orderId = searchParams.get('orderId')
-  const [showConfetti, setShowConfetti] = useState(false)
 
   useEffect(() => {
     if (!orderId) {
@@ -44,7 +43,6 @@ function OrderConfirmationContent() {
     }
 
     frame()
-    setShowConfetti(true)
   }, [orderId, router])
 
   if (!orderId) {
@@ -243,6 +241,15 @@ function OrderConfirmationContent() {
 
 export default function BestaetingungPage() {
   return (
-    <OrderConfirmationContent />
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-16 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-primary-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Lädt...</p>
+        </div>
+      </div>
+    }>
+      <OrderConfirmationContent />
+    </Suspense>
   )
 }

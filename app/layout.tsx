@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -8,8 +7,6 @@ import Providers from '@/components/Providers'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import CallbackWidget from '@/components/CallbackWidget'
 import QuickContactBar from '@/components/QuickContactBar'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Professionelle Kaffeemaschinen B2B | Premium Espressomaschinen für Ihr Unternehmen',
@@ -33,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className={inter.className}>
+      <body className="font-sans">
         <Providers>
           <CartProvider>
             <Header />
