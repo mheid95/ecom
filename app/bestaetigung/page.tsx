@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { FaCheckCircle, FaEnvelope, FaPhone, FaFileInvoice, FaHome } from 'react-icons/fa'
 import confetti from 'canvas-confetti'
 
-export default function BestaetingungPage() {
+function OrderConfirmationContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const orderId = searchParams.get('orderId')
@@ -238,5 +238,11 @@ export default function BestaetingungPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function BestaetingungPage() {
+  return (
+    <OrderConfirmationContent />
   )
 }
