@@ -24,7 +24,7 @@ export default function WarenkorbPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <FaShoppingCart className="mx-auto text-gray-400 text-6xl mb-4" />
-            <h1 className="text-3xl font-bold text-coffee-900 mb-4">
+            <h1 className="text-3xl font-bold text-neutral-900 mb-4">
               Ihr Warenkorb ist leer
             </h1>
             <p className="text-gray-600 mb-8">
@@ -42,7 +42,7 @@ export default function WarenkorbPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-coffee-900 mb-8">Warenkorb</h1>
+        <h1 className="text-3xl font-bold text-neutral-900 mb-8">Warenkorb</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Cart Items */}
@@ -51,15 +51,15 @@ export default function WarenkorbPage() {
               <div key={item.id} className="bg-white rounded-xl shadow-md p-6">
                 <div className="flex items-center space-x-6">
                   <div className="bg-gradient-to-br from-primary-100 to-primary-50 w-24 h-24 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FaShoppingCart className="text-primary-600 text-3xl" />
+                    <FaShoppingCart className="text-accent-600 text-3xl" />
                   </div>
 
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold text-coffee-900 mb-1">
+                    <h3 className="text-lg font-bold text-neutral-900 mb-1">
                       {item.name}
                     </h3>
                     <p className="text-sm text-gray-600 mb-2">{item.category}</p>
-                    <p className="text-xl font-bold text-primary-600">
+                    <p className="text-xl font-bold text-accent-600">
                       {formatPrice(item.price)}
                       <span className="text-sm text-gray-500 ml-2">zzgl. MwSt.</span>
                     </p>
@@ -100,7 +100,7 @@ export default function WarenkorbPage() {
           {/* Order Summary */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-xl shadow-md p-6 sticky top-24">
-              <h2 className="text-xl font-bold text-coffee-900 mb-6">
+              <h2 className="text-xl font-bold text-neutral-900 mb-6">
                 Bestellübersicht
               </h2>
 
@@ -127,7 +127,7 @@ export default function WarenkorbPage() {
                 </div>
 
                 <div className="border-t border-gray-200 pt-4">
-                  <div className="flex justify-between text-lg font-bold text-coffee-900">
+                  <div className="flex justify-between text-lg font-bold text-neutral-900">
                     <span>Gesamtsumme</span>
                     <span>{formatPrice(totalWithVat)}</span>
                   </div>

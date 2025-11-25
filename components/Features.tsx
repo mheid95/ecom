@@ -37,7 +37,7 @@ export default function Features() {
   return (
     <section className="section-container bg-white">
       <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-coffee-900 mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
           Warum KaffeeProfi B2B?
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -49,9 +49,9 @@ export default function Features() {
         {features.map((feature, index) => (
           <div key={index} className="card p-8 hover:scale-105 transition-transform duration-300">
             <div className="bg-primary-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-              <feature.icon className="text-primary-600 text-3xl" />
+              <feature.icon className="text-accent-600 text-3xl" />
             </div>
-            <h3 className="text-xl font-bold text-coffee-900 mb-3">
+            <h3 className="text-xl font-bold text-neutral-900 mb-3">
               {feature.title}
             </h3>
             <p className="text-gray-600 leading-relaxed">

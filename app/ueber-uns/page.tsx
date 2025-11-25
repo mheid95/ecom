@@ -12,7 +12,7 @@ export default function UeberUnsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-coffee-900 to-coffee-800 text-white py-20">
+      <section className="bg-gradient-to-br from-neutral-900 to-neutral-800 text-white py-20">
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
@@ -29,7 +29,7 @@ export default function UeberUnsPage() {
       <section className="section-container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-coffee-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-6">
               Unsere Geschichte
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -39,14 +39,14 @@ export default function UeberUnsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div className="card p-8">
-              <h3 className="text-2xl font-bold text-coffee-900 mb-4">Unsere Mission</h3>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">Unsere Mission</h3>
               <p className="text-gray-700 leading-relaxed">
                 Wir möchten Unternehmen dabei helfen, ihren Mitarbeitern und Kunden erstklassigen Kaffee zu bieten. Denn guter Kaffee steigert nicht nur die Produktivität, sondern schafft auch Momente der Freude im Arbeitsalltag.
               </p>
             </div>
 
             <div className="card p-8">
-              <h3 className="text-2xl font-bold text-coffee-900 mb-4">Unsere Vision</h3>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">Unsere Vision</h3>
               <p className="text-gray-700 leading-relaxed">
                 Wir streben danach, der bevorzugte Partner für professionelle Kaffeelösungen in Deutschland zu werden - durch Innovation, Qualität und exzellenten Service.
               </p>
@@ -59,7 +59,7 @@ export default function UeberUnsPage() {
       <section className="bg-gray-50 py-16">
         <div className="section-container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-coffee-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
               Unsere Werte
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -70,9 +70,9 @@ export default function UeberUnsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="card p-8 text-center">
               <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <FaAward className="text-primary-600 text-4xl" />
+                <FaAward className="text-accent-600 text-4xl" />
               </div>
-              <h3 className="text-xl font-bold text-coffee-900 mb-3">Qualität</h3>
+              <h3 className="text-xl font-bold text-neutral-900 mb-3">Qualität</h3>
               <p className="text-gray-600">
                 Nur Premium-Geräte von führenden Herstellern mit voller Garantie
               </p>
@@ -80,9 +80,9 @@ export default function UeberUnsPage() {
 
             <div className="card p-8 text-center">
               <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <FaUsers className="text-primary-600 text-4xl" />
+                <FaUsers className="text-accent-600 text-4xl" />
               </div>
-              <h3 className="text-xl font-bold text-coffee-900 mb-3">Service</h3>
+              <h3 className="text-xl font-bold text-neutral-900 mb-3">Service</h3>
               <p className="text-gray-600">
                 24/7 Support und persönliche Betreuung durch Experten
               </p>
@@ -90,9 +90,9 @@ export default function UeberUnsPage() {
 
             <div className="card p-8 text-center">
               <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <FaHandshake className="text-primary-600 text-4xl" />
+                <FaHandshake className="text-accent-600 text-4xl" />
               </div>
-              <h3 className="text-xl font-bold text-coffee-900 mb-3">Partnerschaft</h3>
+              <h3 className="text-xl font-bold text-neutral-900 mb-3">Partnerschaft</h3>
               <p className="text-gray-600">
                 Langfristige Beziehungen basierend auf Vertrauen und Transparenz
               </p>
@@ -100,9 +100,9 @@ export default function UeberUnsPage() {
 
             <div className="card p-8 text-center">
               <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <FaLeaf className="text-primary-600 text-4xl" />
+                <FaLeaf className="text-accent-600 text-4xl" />
               </div>
-              <h3 className="text-xl font-bold text-coffee-900 mb-3">Nachhaltigkeit</h3>
+              <h3 className="text-xl font-bold text-neutral-900 mb-3">Nachhaltigkeit</h3>
               <p className="text-gray-600">
                 Energieeffiziente Geräte und nachhaltige Kaffeesorten
               </p>
@@ -139,7 +139,7 @@ export default function UeberUnsPage() {
       <section className="bg-gray-50 py-16">
         <div className="section-container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-coffee-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
               Unser Team
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -154,18 +154,18 @@ export default function UeberUnsPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="bg-coffee-900 w-32 h-32 rounded-full mx-auto mb-4"></div>
-                <h3 className="font-bold text-coffee-900">Vertrieb & Beratung</h3>
+                <div className="bg-neutral-900 w-32 h-32 rounded-full mx-auto mb-4"></div>
+                <h3 className="font-bold text-neutral-900">Vertrieb & Beratung</h3>
                 <p className="text-sm text-gray-600">8 Berater</p>
               </div>
               <div className="text-center">
-                <div className="bg-coffee-900 w-32 h-32 rounded-full mx-auto mb-4"></div>
-                <h3 className="font-bold text-coffee-900">Technischer Service</h3>
+                <div className="bg-neutral-900 w-32 h-32 rounded-full mx-auto mb-4"></div>
+                <h3 className="font-bold text-neutral-900">Technischer Service</h3>
                 <p className="text-sm text-gray-600">12 Techniker</p>
               </div>
               <div className="text-center">
-                <div className="bg-coffee-900 w-32 h-32 rounded-full mx-auto mb-4"></div>
-                <h3 className="font-bold text-coffee-900">Schulung & Support</h3>
+                <div className="bg-neutral-900 w-32 h-32 rounded-full mx-auto mb-4"></div>
+                <h3 className="font-bold text-neutral-900">Schulung & Support</h3>
                 <p className="text-sm text-gray-600">5 Experten</p>
               </div>
             </div>
@@ -176,7 +176,7 @@ export default function UeberUnsPage() {
       {/* CTA */}
       <section className="section-container">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-coffee-900 mb-4">
+          <h2 className="text-3xl font-bold text-neutral-900 mb-4">
             Werden Sie Teil unserer Erfolgsgeschichte
           </h2>
           <p className="text-lg text-gray-600 mb-8">

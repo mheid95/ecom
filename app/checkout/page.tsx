@@ -59,7 +59,7 @@ export default function CheckoutPage() {
       <div className="min-h-screen bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-coffee-900 mb-4">
+            <h1 className="text-3xl font-bold text-neutral-900 mb-4">
               Ihr Warenkorb ist leer
             </h1>
             <Link href="/produkte" className="btn-primary inline-block">
@@ -74,14 +74,14 @@ export default function CheckoutPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-coffee-900 mb-8">Kasse</h1>
+        <h1 className="text-3xl font-bold text-neutral-900 mb-8">Kasse</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Billing & Payment Forms */}
           <div className="lg:col-span-2 space-y-8">
             {/* Billing Address */}
             <div className="bg-white rounded-xl shadow-md p-8">
-              <h2 className="text-2xl font-bold text-coffee-900 mb-6">
+              <h2 className="text-2xl font-bold text-neutral-900 mb-6">
                 Rechnungsadresse
               </h2>
 
@@ -225,7 +225,7 @@ export default function CheckoutPage() {
 
             {/* Payment Method Selection */}
             <div className="bg-white rounded-xl shadow-md p-8">
-              <h2 className="text-2xl font-bold text-coffee-900 mb-6">
+              <h2 className="text-2xl font-bold text-neutral-900 mb-6">
                 Zahlungsart wählen
               </h2>
 
@@ -234,7 +234,7 @@ export default function CheckoutPage() {
                   onClick={() => setSelectedPayment('stripe')}
                   className={`p-6 rounded-xl border-2 transition-all ${
                     selectedPayment === 'stripe'
-                      ? 'border-primary-600 bg-primary-50'
+                      ? 'border-accent-600 bg-primary-50'
                       : 'border-gray-200 hover:border-gray-300'
                   }`}
                 >
@@ -243,7 +243,7 @@ export default function CheckoutPage() {
                     <FaCreditCard className="text-gray-400" />
                   </div>
                   <div className="text-left">
-                    <div className="font-semibold text-coffee-900">Kreditkarte</div>
+                    <div className="font-semibold text-neutral-900">Kreditkarte</div>
                     <div className="text-sm text-gray-600">Via Stripe</div>
                   </div>
                 </button>
@@ -252,7 +252,7 @@ export default function CheckoutPage() {
                   onClick={() => setSelectedPayment('paypal')}
                   className={`p-6 rounded-xl border-2 transition-all ${
                     selectedPayment === 'paypal'
-                      ? 'border-primary-600 bg-primary-50'
+                      ? 'border-accent-600 bg-primary-50'
                       : 'border-gray-200 hover:border-gray-300'
                   }`}
                 >
@@ -260,7 +260,7 @@ export default function CheckoutPage() {
                     <FaPaypal className="text-4xl text-[#0070BA]" />
                   </div>
                   <div className="text-left">
-                    <div className="font-semibold text-coffee-900">PayPal</div>
+                    <div className="font-semibold text-neutral-900">PayPal</div>
                     <div className="text-sm text-gray-600">Schnell & sicher</div>
                   </div>
                 </button>
@@ -269,7 +269,7 @@ export default function CheckoutPage() {
                   onClick={() => setSelectedPayment('klarna')}
                   className={`p-6 rounded-xl border-2 transition-all ${
                     selectedPayment === 'klarna'
-                      ? 'border-primary-600 bg-primary-50'
+                      ? 'border-accent-600 bg-primary-50'
                       : 'border-gray-200 hover:border-gray-300'
                   }`}
                 >
@@ -277,7 +277,7 @@ export default function CheckoutPage() {
                     <SiKlarna className="text-4xl text-[#FFB3C7]" />
                   </div>
                   <div className="text-left">
-                    <div className="font-semibold text-coffee-900">Klarna</div>
+                    <div className="font-semibold text-neutral-900">Klarna</div>
                     <div className="text-sm text-gray-600">Jetzt kaufen, später zahlen</div>
                   </div>
                 </button>
@@ -286,7 +286,7 @@ export default function CheckoutPage() {
                   onClick={() => setSelectedPayment('invoice')}
                   className={`p-6 rounded-xl border-2 transition-all ${
                     selectedPayment === 'invoice'
-                      ? 'border-primary-600 bg-primary-50'
+                      ? 'border-accent-600 bg-primary-50'
                       : 'border-gray-200 hover:border-gray-300'
                   }`}
                 >
@@ -294,7 +294,7 @@ export default function CheckoutPage() {
                     <FaLock className="text-4xl text-gray-400" />
                   </div>
                   <div className="text-left">
-                    <div className="font-semibold text-coffee-900">Rechnung</div>
+                    <div className="font-semibold text-neutral-900">Rechnung</div>
                     <div className="text-sm text-gray-600">14 Tage Zahlungsziel</div>
                   </div>
                 </button>
@@ -352,7 +352,7 @@ export default function CheckoutPage() {
           {/* Order Summary */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-xl shadow-md p-6 sticky top-24">
-              <h2 className="text-xl font-bold text-coffee-900 mb-6">
+              <h2 className="text-xl font-bold text-neutral-900 mb-6">
                 Ihre Bestellung
               </h2>
 
@@ -360,7 +360,7 @@ export default function CheckoutPage() {
                 {items.map((item) => (
                   <div key={item.id} className="flex justify-between text-sm">
                     <div>
-                      <div className="font-semibold text-coffee-900">{item.name}</div>
+                      <div className="font-semibold text-neutral-900">{item.name}</div>
                       <div className="text-gray-600">Menge: {item.quantity}</div>
                     </div>
                     <div className="font-semibold text-gray-900">
@@ -387,7 +387,7 @@ export default function CheckoutPage() {
                 </div>
 
                 <div className="border-t border-gray-200 pt-4">
-                  <div className="flex justify-between text-xl font-bold text-coffee-900">
+                  <div className="flex justify-between text-xl font-bold text-neutral-900">
                     <span>Gesamtsumme</span>
                     <span>{formatPrice(totalWithVat)}</span>
                   </div>

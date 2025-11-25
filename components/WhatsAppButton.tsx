@@ -51,7 +51,7 @@ export default function WhatsAppButton() {
             <div className="flex items-start space-x-3">
               <FaWhatsapp className="text-green-500 text-2xl flex-shrink-0 mt-1" />
               <div>
-                <p className="font-semibold text-coffee-900 mb-1">
+                <p className="font-semibold text-neutral-900 mb-1">
                   Haben Sie Fragen?
                 </p>
                 <p className="text-sm text-gray-600">
@@ -69,7 +69,7 @@ export default function WhatsAppButton() {
               <div className="flex items-center space-x-2">
                 <FaWhatsapp className="text-green-500 text-2xl" />
                 <div>
-                  <h3 className="font-bold text-coffee-900">WhatsApp Chat</h3>
+                  <h3 className="font-bold text-neutral-900">WhatsApp Chat</h3>
                   <p className="text-xs text-gray-500">Antwort in wenigen Minuten</p>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function WhatsAppButton() {
                       <msg.icon className="text-green-600" />
                     </div>
                     <div className="flex-1">
-                      <div className="font-semibold text-sm text-coffee-900">
+                      <div className="font-semibold text-sm text-neutral-900">
                         {msg.title}
                       </div>
                       <div className="text-xs text-gray-600 line-clamp-1">

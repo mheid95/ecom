@@ -49,7 +49,7 @@ export default function QuickContactBar() {
 
             <a
               href="/kontakt"
-              className="bg-white text-primary-600 hover:bg-primary-50 px-4 py-2 rounded-lg font-semibold transition-all hover:scale-105 flex items-center space-x-2"
+              className="bg-white text-accent-600 hover:bg-primary-50 px-4 py-2 rounded-lg font-semibold transition-all hover:scale-105 flex items-center space-x-2"
             >
               <FaCalendar />
               <span>Beratung</span>

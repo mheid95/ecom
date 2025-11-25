@@ -8,7 +8,7 @@ export default function ProduktePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-coffee-900 to-coffee-800 text-white py-20">
+      <section className="bg-gradient-to-br from-neutral-900 to-neutral-800 text-white py-20">
         <div className="section-container">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
@@ -27,18 +27,18 @@ export default function ProduktePage() {
           {allProducts.map((product) => (
             <div key={product.id} className="card overflow-hidden">
               <div className="bg-gradient-to-br from-primary-100 to-primary-50 p-12 relative">
-                <FaCoffee className="text-primary-600 text-8xl mx-auto" />
-                <div className="absolute top-4 right-4 bg-coffee-900 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                <FaCoffee className="text-accent-600 text-8xl mx-auto" />
+                <div className="absolute top-4 right-4 bg-neutral-900 text-white px-4 py-2 rounded-full text-sm font-semibold">
                   {product.category}
                 </div>
               </div>
 
               <div className="p-8 space-y-6">
                 <div>
-                  <h2 className="text-2xl font-bold text-coffee-900 mb-2">
+                  <h2 className="text-2xl font-bold text-neutral-900 mb-2">
                     {product.name}
                   </h2>
-                  <p className="text-primary-600 font-medium text-sm">
+                  <p className="text-accent-600 font-medium text-sm">
                     Ideal für: {product.ideal}
                   </p>
                 </div>
@@ -48,11 +48,11 @@ export default function ProduktePage() {
                 </p>
 
                 <div>
-                  <h3 className="font-semibold text-coffee-900 mb-3">Ausstattung:</h3>
+                  <h3 className="font-semibold text-neutral-900 mb-3">Ausstattung:</h3>
                   <ul className="space-y-2">
                     {product.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start">
-                        <FaCheckCircle className="text-primary-600 mr-3 mt-1 flex-shrink-0" />
+                        <FaCheckCircle className="text-accent-600 mr-3 mt-1 flex-shrink-0" />
                         <span className="text-gray-700">{feature}</span>
                       </li>
                     ))}
@@ -62,7 +62,7 @@ export default function ProduktePage() {
                 <div className="border-t border-gray-200 pt-6">
                   <div className="flex items-end justify-between mb-6">
                     <div>
-                      <div className="text-3xl font-bold text-primary-600">
+                      <div className="text-3xl font-bold text-accent-600">
                         {product.priceDisplay}
                       </div>
                       <div className="text-sm text-gray-500">

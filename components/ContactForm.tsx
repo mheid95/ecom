@@ -172,7 +172,7 @@ export default function ContactForm() {
             placeholder="1"
           />
           {parseInt(formData.quantity) >= 3 && (
-            <p className="text-primary-600 text-sm mt-2 font-medium">
+            <p className="text-accent-600 text-sm mt-2 font-medium">
               ✓ Mengenrabatt verfügbar
             </p>
           )}
@@ -197,7 +197,7 @@ export default function ContactForm() {
       <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
         <p className="text-sm text-gray-600">
           Mit dem Absenden des Formulars stimmen Sie unserer{' '}
-          <a href="/datenschutz" className="text-primary-600 hover:underline">
+          <a href="/datenschutz" className="text-accent-600 hover:underline">
             Datenschutzerklärung
           </a>{' '}
           zu. Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.

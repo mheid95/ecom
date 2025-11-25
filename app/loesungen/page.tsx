@@ -79,7 +79,7 @@ export default function LoesungenPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-coffee-900 to-coffee-800 text-white py-20">
+      <section className="bg-gradient-to-br from-neutral-900 to-neutral-800 text-white py-20">
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
@@ -107,7 +107,7 @@ export default function LoesungenPage() {
                     {solution.ideal}
                   </div>
 
-                  <h2 className="text-3xl font-bold text-coffee-900 mb-4">
+                  <h2 className="text-3xl font-bold text-neutral-900 mb-4">
                     {solution.title}
                   </h2>
 
@@ -118,7 +118,7 @@ export default function LoesungenPage() {
                   <div className="space-y-3 mb-8">
                     {solution.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center">
-                        <FaCheckCircle className="text-primary-600 mr-3 flex-shrink-0" />
+                        <FaCheckCircle className="text-accent-600 mr-3 flex-shrink-0" />
                         <span className="text-gray-700">{feature}</span>
                       </div>
                     ))}
@@ -127,7 +127,7 @@ export default function LoesungenPage() {
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="text-sm text-gray-600 mb-1">Leasing</div>
-                      <div className="text-2xl font-bold text-primary-600">
+                      <div className="text-2xl font-bold text-accent-600">
                         {solution.priceFrom}
                       </div>
                     </div>
@@ -147,7 +147,7 @@ export default function LoesungenPage() {
       <section className="bg-gray-50 py-16">
         <div className="section-container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-coffee-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
               Unser Prozess
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -167,7 +167,7 @@ export default function LoesungenPage() {
                 <div className="bg-gradient-to-br from-primary-600 to-primary-700 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg">
                   {item.step}
                 </div>
-                <h3 className="font-bold text-coffee-900 mb-2">{item.title}</h3>
+                <h3 className="font-bold text-neutral-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600">{item.desc}</p>
               </div>
             ))}
@@ -177,7 +177,7 @@ export default function LoesungenPage() {
 
       {/* CTA */}
       <section className="section-container">
-        <div className="bg-gradient-to-br from-coffee-900 to-coffee-800 rounded-2xl p-12 text-white text-center">
+        <div className="bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-2xl p-12 text-white text-center">
           <h2 className="text-3xl font-bold mb-4">
             Bereit für Ihre individuelle Kaffeelösung?
           </h2>

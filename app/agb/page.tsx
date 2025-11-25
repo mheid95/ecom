@@ -14,11 +14,11 @@ export default function AGBPage() {
     <div className="min-h-screen bg-gray-50 py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-xl shadow-lg p-8 lg:p-12">
-          <h1 className="text-4xl font-bold text-coffee-900 mb-8">Allgemeine Geschäftsbedingungen</h1>
+          <h1 className="text-4xl font-bold text-neutral-900 mb-8">Allgemeine Geschäftsbedingungen</h1>
 
           <div className="space-y-8 text-gray-700">
             <section>
-              <h2 className="text-2xl font-bold text-coffee-900 mb-4">§ 1 Geltungsbereich</h2>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-4">§ 1 Geltungsbereich</h2>
               <p className="leading-relaxed mb-4">
                 (1) Diese Allgemeinen Geschäftsbedingungen (nachfolgend „AGB") der KaffeeProfi B2B GmbH
                 (nachfolgend „Verkäufer") gelten für alle Verträge über die Lieferung von professionellen
@@ -31,7 +31,7 @@ export default function AGBPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-coffee-900 mb-4">§ 2 Vertragsschluss</h2>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-4">§ 2 Vertragsschluss</h2>
               <p className="leading-relaxed mb-4">
                 (1) Die im Online-Shop des Verkäufers enthaltenen Produktbeschreibungen stellen keine
                 verbindlichen Angebote seitens des Verkäufers dar, sondern dienen zur Abgabe eines
@@ -49,7 +49,7 @@ export default function AGBPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-coffee-900 mb-4">§ 3 Preise und Zahlungsbedingungen</h2>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-4">§ 3 Preise und Zahlungsbedingungen</h2>
               <p className="leading-relaxed mb-4">
                 (1) Alle Preise verstehen sich zuzüglich der gesetzlichen Umsatzsteuer.
               </p>
@@ -69,7 +69,7 @@ export default function AGBPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-coffee-900 mb-4">§ 4 Lieferung und Versand</h2>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-4">§ 4 Lieferung und Versand</h2>
               <p className="leading-relaxed mb-4">
                 (1) Die Lieferung erfolgt nach individueller Vereinbarung. Standard-Lieferzeit für
                 lagerhaltige Artikel beträgt 2-5 Werktage.
@@ -84,7 +84,7 @@ export default function AGBPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-coffee-900 mb-4">§ 5 Gewährleistung</h2>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-4">§ 5 Gewährleistung</h2>
               <p className="leading-relaxed mb-4">
                 (1) Es gelten die gesetzlichen Gewährleistungsrechte.
               </p>
@@ -97,14 +97,14 @@ export default function AGBPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-coffee-900 mb-4">§ 6 Eigentumsvorbehalt</h2>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-4">§ 6 Eigentumsvorbehalt</h2>
               <p className="leading-relaxed mb-4">
                 Die gelieferte Ware bleibt bis zur vollständigen Bezahlung Eigentum des Verkäufers.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-coffee-900 mb-4">§ 7 Service und Wartung</h2>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-4">§ 7 Service und Wartung</h2>
               <p className="leading-relaxed mb-4">
                 (1) Der Verkäufer bietet verschiedene Service- und Wartungspakete an.
               </p>
@@ -117,7 +117,7 @@ export default function AGBPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-coffee-900 mb-4">§ 8 Haftung</h2>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-4">§ 8 Haftung</h2>
               <p className="leading-relaxed mb-4">
                 (1) Der Verkäufer haftet unbeschränkt für Vorsatz und grobe Fahrlässigkeit.
               </p>
@@ -131,7 +131,7 @@ export default function AGBPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-coffee-900 mb-4">§ 9 Schlussbestimmungen</h2>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-4">§ 9 Schlussbestimmungen</h2>
               <p className="leading-relaxed mb-4">
                 (1) Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.
               </p>

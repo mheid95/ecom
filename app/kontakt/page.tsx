@@ -12,7 +12,7 @@ export default function KontaktPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-coffee-900 to-coffee-800 text-white py-16">
+      <section className="bg-gradient-to-br from-neutral-900 to-neutral-800 text-white py-16">
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
@@ -31,18 +31,18 @@ export default function KontaktPage() {
           {/* Contact Information */}
           <div className="lg:col-span-1 space-y-6">
             <div className="card p-6">
-              <h2 className="text-2xl font-bold text-coffee-900 mb-6">
+              <h2 className="text-2xl font-bold text-neutral-900 mb-6">
                 Kontaktinformationen
               </h2>
 
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-primary-100 p-3 rounded-lg mr-4">
-                    <FaPhone className="text-primary-600 text-xl" />
+                    <FaPhone className="text-accent-600 text-xl" />
                   </div>
                   <div>
-                    <div className="font-semibold text-coffee-900 mb-1">Telefon</div>
-                    <a href="tel:+4912345678" className="text-primary-600 hover:underline">
+                    <div className="font-semibold text-neutral-900 mb-1">Telefon</div>
+                    <a href="tel:+4912345678" className="text-accent-600 hover:underline">
                       +49 (0) 123 456 78
                     </a>
                     <div className="text-sm text-gray-600 mt-1">Mo-Fr: 8:00 - 18:00 Uhr</div>
@@ -51,11 +51,11 @@ export default function KontaktPage() {
 
                 <div className="flex items-start">
                   <div className="bg-primary-100 p-3 rounded-lg mr-4">
-                    <FaEnvelope className="text-primary-600 text-xl" />
+                    <FaEnvelope className="text-accent-600 text-xl" />
                   </div>
                   <div>
-                    <div className="font-semibold text-coffee-900 mb-1">E-Mail</div>
-                    <a href="mailto:info@kaffee-profi.de" className="text-primary-600 hover:underline break-all">
+                    <div className="font-semibold text-neutral-900 mb-1">E-Mail</div>
+                    <a href="mailto:info@kaffee-profi.de" className="text-accent-600 hover:underline break-all">
                       info@kaffee-profi.de
                     </a>
                     <div className="text-sm text-gray-600 mt-1">Antwort innerhalb 24h</div>
@@ -64,10 +64,10 @@ export default function KontaktPage() {
 
                 <div className="flex items-start">
                   <div className="bg-primary-100 p-3 rounded-lg mr-4">
-                    <FaMapMarkerAlt className="text-primary-600 text-xl" />
+                    <FaMapMarkerAlt className="text-accent-600 text-xl" />
                   </div>
                   <div>
-                    <div className="font-semibold text-coffee-900 mb-1">Adresse</div>
+                    <div className="font-semibold text-neutral-900 mb-1">Adresse</div>
                     <div className="text-gray-700">
                       Musterstraße 123<br />
                       12345 Berlin<br />
@@ -78,10 +78,10 @@ export default function KontaktPage() {
 
                 <div className="flex items-start">
                   <div className="bg-primary-100 p-3 rounded-lg mr-4">
-                    <FaClock className="text-primary-600 text-xl" />
+                    <FaClock className="text-accent-600 text-xl" />
                   </div>
                   <div>
-                    <div className="font-semibold text-coffee-900 mb-1">Öffnungszeiten</div>
+                    <div className="font-semibold text-neutral-900 mb-1">Öffnungszeiten</div>
                     <div className="text-gray-700 text-sm">
                       <div>Montag - Freitag: 8:00 - 18:00</div>
                       <div>Samstag: 10:00 - 14:00</div>
@@ -95,7 +95,7 @@ export default function KontaktPage() {
                     <FaWhatsapp className="text-green-600 text-xl" />
                   </div>
                   <div>
-                    <div className="font-semibold text-coffee-900 mb-1">WhatsApp Business</div>
+                    <div className="font-semibold text-neutral-900 mb-1">WhatsApp Business</div>
                     <a href="https://wa.me/4912345678" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">
                       +49 (0) 123 456 78
                     </a>
@@ -119,7 +119,7 @@ export default function KontaktPage() {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="card p-8">
-              <h2 className="text-2xl font-bold text-coffee-900 mb-2">
+              <h2 className="text-2xl font-bold text-neutral-900 mb-2">
                 Angebot anfordern
               </h2>
               <p className="text-gray-600 mb-8">
@@ -136,13 +136,13 @@ export default function KontaktPage() {
       <section className="bg-gray-50 py-16">
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-coffee-900 mb-8 text-center">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-8 text-center">
               Häufig gestellte Fragen
             </h2>
 
             <div className="space-y-4">
               <details className="card p-6 cursor-pointer">
-                <summary className="font-semibold text-coffee-900 text-lg">
+                <summary className="font-semibold text-neutral-900 text-lg">
                   Wie schnell können Sie liefern?
                 </summary>
                 <p className="text-gray-700 mt-4 leading-relaxed">
@@ -151,7 +151,7 @@ export default function KontaktPage() {
               </details>
 
               <details className="card p-6 cursor-pointer">
-                <summary className="font-semibold text-coffee-900 text-lg">
+                <summary className="font-semibold text-neutral-900 text-lg">
                   Bieten Sie Wartungsverträge an?
                 </summary>
                 <p className="text-gray-700 mt-4 leading-relaxed">
@@ -160,7 +160,7 @@ export default function KontaktPage() {
               </details>
 
               <details className="card p-6 cursor-pointer">
-                <summary className="font-semibold text-coffee-900 text-lg">
+                <summary className="font-semibold text-neutral-900 text-lg">
                   Welche Finanzierungsoptionen gibt es?
                 </summary>
                 <p className="text-gray-700 mt-4 leading-relaxed">
@@ -169,7 +169,7 @@ export default function KontaktPage() {
               </details>
 
               <details className="card p-6 cursor-pointer">
-                <summary className="font-semibold text-coffee-900 text-lg">
+                <summary className="font-semibold text-neutral-900 text-lg">
                   Gibt es Mengenrabatte?
                 </summary>
                 <p className="text-gray-700 mt-4 leading-relaxed">

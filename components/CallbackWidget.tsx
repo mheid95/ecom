@@ -39,7 +39,7 @@ export default function CallbackWidget() {
     return (
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-28 right-6 z-40 bg-coffee-900 hover:bg-coffee-800 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-110"
+        className="fixed bottom-28 right-6 z-40 bg-neutral-900 hover:bg-neutral-800 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-110"
         aria-label="Rückruf anfordern"
       >
         <FaPhone size={20} />
@@ -52,10 +52,10 @@ export default function CallbackWidget() {
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center space-x-2">
           <div className="bg-primary-100 p-2 rounded-full">
-            <FaPhone className="text-primary-600" />
+            <FaPhone className="text-accent-600" />
           </div>
           <div>
-            <h3 className="font-bold text-coffee-900">Rückruf-Service</h3>
+            <h3 className="font-bold text-neutral-900">Rückruf-Service</h3>
             <p className="text-xs text-gray-500">Kostenlos & unverbindlich</p>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function CallbackWidget() {
           <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <FaCheck className="text-green-600 text-2xl" />
           </div>
-          <h4 className="font-bold text-coffee-900 mb-2">Vielen Dank!</h4>
+          <h4 className="font-bold text-neutral-900 mb-2">Vielen Dank!</h4>
           <p className="text-sm text-gray-600">
             Wir rufen Sie in Kürze zurück.
           </p>
@@ -89,7 +89,7 @@ export default function CallbackWidget() {
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none"
               placeholder="Max Mustermann"
             />
           </div>
@@ -104,7 +104,7 @@ export default function CallbackWidget() {
               required
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none"
               placeholder="+49 123 456789"
             />
           </div>
@@ -117,7 +117,7 @@ export default function CallbackWidget() {
               name="preferredTime"
               value={formData.preferredTime}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none"
             >
               <option value="asap">So schnell wie möglich</option>
               <option value="morning">Vormittags (9-12 Uhr)</option>

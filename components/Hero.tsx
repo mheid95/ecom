@@ -3,14 +3,14 @@ import { FaArrowRight, FaCoffee } from 'react-icons/fa'
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-coffee-900 via-coffee-800 to-coffee-900 text-white overflow-hidden">
+    <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white overflow-hidden">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-20"></div>
 
       <div className="relative section-container py-20 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center bg-primary-600/20 backdrop-blur-sm border border-primary-400/30 rounded-full px-4 py-2 text-sm">
-              <FaCoffee className="mr-2 text-primary-400" />
+            <div className="inline-flex items-center bg-accent-600/20 backdrop-blur-sm border border-primary-400/30 rounded-full px-4 py-2 text-sm">
+              <FaCoffee className="mr-2 text-accent-400" />
               <span>Professionelle Lösungen für Ihr Business</span>
             </div>
 
@@ -32,18 +32,18 @@ export default function Hero() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-coffee-700">
+            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-neutral-700">
               <div>
-                <div className="text-3xl font-bold text-primary-400">500+</div>
-                <div className="text-sm text-coffee-200">Zufriedene Kunden</div>
+                <div className="text-3xl font-bold text-accent-400">500+</div>
+                <div className="text-sm text-neutral-300">Zufriedene Kunden</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary-400">15+</div>
-                <div className="text-sm text-coffee-200">Jahre Erfahrung</div>
+                <div className="text-3xl font-bold text-accent-400">15+</div>
+                <div className="text-sm text-neutral-300">Jahre Erfahrung</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary-400">24/7</div>
-                <div className="text-sm text-coffee-200">Service</div>
+                <div className="text-3xl font-bold text-accent-400">24/7</div>
+                <div className="text-sm text-neutral-300">Service</div>
               </div>
             </div>
           </div>
@@ -54,10 +54,10 @@ export default function Hero() {
                 <FaCoffee className="text-white/20 text-[200px]" />
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-coffee-700 rounded-xl p-6 shadow-xl">
-              <div className="text-sm text-coffee-200">Über</div>
+            <div className="absolute -bottom-6 -right-6 bg-neutral-700 rounded-xl p-6 shadow-xl">
+              <div className="text-sm text-neutral-300">Über</div>
               <div className="text-3xl font-bold">1000+</div>
-              <div className="text-sm text-coffee-200">Installationen</div>
+              <div className="text-sm text-neutral-300">Installationen</div>
             </div>
           </div>
         </div>

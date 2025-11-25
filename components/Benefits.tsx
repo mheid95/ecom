@@ -31,7 +31,7 @@ export default function Benefits() {
   return (
     <section className="section-container bg-white">
       <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-coffee-900 mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
           Branchen & Lösungen
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -48,7 +48,7 @@ export default function Benefits() {
               </div>
 
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-coffee-900 mb-3">
+                <h3 className="text-2xl font-bold text-neutral-900 mb-3">
                   {industry.title}
                 </h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">
@@ -71,7 +71,7 @@ export default function Benefits() {
         ))}
       </div>
 
-      <div className="mt-16 bg-gradient-to-br from-coffee-900 to-coffee-800 rounded-2xl p-12 text-white text-center">
+      <div className="mt-16 bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-2xl p-12 text-white text-center">
         <h3 className="text-3xl font-bold mb-4">
           Individuelle Beratung für Ihre Branche
         </h3>

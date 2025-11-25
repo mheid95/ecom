@@ -28,7 +28,7 @@ export default function Testimonials() {
   return (
     <section className="section-container bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-coffee-900 mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
           Das sagen unsere Kunden
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -52,9 +52,9 @@ export default function Testimonials() {
             </p>
 
             <div className="border-t border-gray-200 pt-4">
-              <div className="font-bold text-coffee-900">{testimonial.name}</div>
+              <div className="font-bold text-neutral-900">{testimonial.name}</div>
               <div className="text-sm text-gray-600">{testimonial.role}</div>
-              <div className="text-sm text-primary-600 font-medium">{testimonial.company}</div>
+              <div className="text-sm text-accent-600 font-medium">{testimonial.company}</div>
             </div>
           </div>
         ))}
@@ -63,17 +63,17 @@ export default function Testimonials() {
       <div className="mt-12 text-center">
         <div className="inline-flex items-center space-x-8 bg-white rounded-xl p-6 shadow-lg">
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary-600">4.9/5</div>
+            <div className="text-4xl font-bold text-accent-600">4.9/5</div>
             <div className="text-sm text-gray-600">Durchschnitt</div>
           </div>
           <div className="h-12 w-px bg-gray-300"></div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary-600">500+</div>
+            <div className="text-4xl font-bold text-accent-600">500+</div>
             <div className="text-sm text-gray-600">Bewertungen</div>
           </div>
           <div className="h-12 w-px bg-gray-300"></div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary-600">98%</div>
+            <div className="text-4xl font-bold text-accent-600">98%</div>
             <div className="text-sm text-gray-600">Weiterempfehlung</div>
           </div>
         </div>

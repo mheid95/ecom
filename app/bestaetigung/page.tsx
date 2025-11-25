@@ -72,17 +72,17 @@ function OrderConfirmationContent() {
           <div className="p-8 sm:p-12">
             {/* Order Details */}
             <div className="bg-gray-50 rounded-xl p-6 mb-8">
-              <h2 className="text-xl font-bold text-coffee-900 mb-4">
+              <h2 className="text-xl font-bold text-neutral-900 mb-4">
                 Bestelldetails
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <div className="text-sm text-gray-600 mb-1">Bestellnummer</div>
-                  <div className="font-mono font-semibold text-coffee-900">{orderId}</div>
+                  <div className="font-mono font-semibold text-neutral-900">{orderId}</div>
                 </div>
                 <div>
                   <div className="text-sm text-gray-600 mb-1">Bestelldatum</div>
-                  <div className="font-semibold text-coffee-900">
+                  <div className="font-semibold text-neutral-900">
                     {new Date().toLocaleDateString('de-DE', {
                       day: '2-digit',
                       month: 'long',
@@ -96,7 +96,7 @@ function OrderConfirmationContent() {
                 </div>
                 <div>
                   <div className="text-sm text-gray-600 mb-1">Voraussichtliche Lieferung</div>
-                  <div className="font-semibold text-coffee-900">
+                  <div className="font-semibold text-neutral-900">
                     {estimatedDelivery.toLocaleDateString('de-DE', {
                       day: '2-digit',
                       month: 'long',
@@ -109,17 +109,17 @@ function OrderConfirmationContent() {
 
             {/* What's Next */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-coffee-900 mb-6">
+              <h2 className="text-2xl font-bold text-neutral-900 mb-6">
                 Wie geht es weiter?
               </h2>
 
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
                   <div className="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                    <FaEnvelope className="text-primary-600 text-xl" />
+                    <FaEnvelope className="text-accent-600 text-xl" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-coffee-900 mb-1">
+                    <h3 className="font-semibold text-neutral-900 mb-1">
                       1. Bestellbestätigung per E-Mail
                     </h3>
                     <p className="text-gray-600">
@@ -130,10 +130,10 @@ function OrderConfirmationContent() {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                    <FaPhone className="text-primary-600 text-xl" />
+                    <FaPhone className="text-accent-600 text-xl" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-coffee-900 mb-1">
+                    <h3 className="font-semibold text-neutral-900 mb-1">
                       2. Persönliche Kontaktaufnahme
                     </h3>
                     <p className="text-gray-600">
@@ -145,10 +145,10 @@ function OrderConfirmationContent() {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                    <FaFileInvoice className="text-primary-600 text-xl" />
+                    <FaFileInvoice className="text-accent-600 text-xl" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-coffee-900 mb-1">
+                    <h3 className="font-semibold text-neutral-900 mb-1">
                       3. Rechnung und Dokumente
                     </h3>
                     <p className="text-gray-600">
@@ -217,20 +217,20 @@ function OrderConfirmationContent() {
         {/* Additional Info */}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="bg-white rounded-xl p-6 shadow-md text-center">
-            <div className="text-3xl font-bold text-primary-600 mb-2">✓</div>
-            <div className="font-semibold text-coffee-900">Sichere Zahlung</div>
+            <div className="text-3xl font-bold text-accent-600 mb-2">✓</div>
+            <div className="font-semibold text-neutral-900">Sichere Zahlung</div>
             <div className="text-sm text-gray-600">SSL-verschlüsselt</div>
           </div>
 
           <div className="bg-white rounded-xl p-6 shadow-md text-center">
-            <div className="text-3xl font-bold text-primary-600 mb-2">✓</div>
-            <div className="font-semibold text-coffee-900">Kostenlose Installation</div>
+            <div className="text-3xl font-bold text-accent-600 mb-2">✓</div>
+            <div className="font-semibold text-neutral-900">Kostenlose Installation</div>
             <div className="text-sm text-gray-600">Inklusive Einweisung</div>
           </div>
 
           <div className="bg-white rounded-xl p-6 shadow-md text-center">
-            <div className="text-3xl font-bold text-primary-600 mb-2">✓</div>
-            <div className="font-semibold text-coffee-900">2 Jahre Garantie</div>
+            <div className="text-3xl font-bold text-accent-600 mb-2">✓</div>
+            <div className="font-semibold text-neutral-900">2 Jahre Garantie</div>
             <div className="text-sm text-gray-600">Auf alle Geräte</div>
           </div>
         </div>
@@ -244,7 +244,7 @@ export default function BestaetingungPage() {
     <Suspense fallback={
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-16 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-primary-600 mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-accent-600 mx-auto mb-4"></div>
           <p className="text-gray-600">Lädt...</p>
         </div>
       </div>

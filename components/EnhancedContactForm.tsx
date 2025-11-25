@@ -71,7 +71,7 @@ Telefon: ${formData.phone}`
     <div className="space-y-6">
       {/* Quick Actions */}
       <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 border border-green-200">
-        <h3 className="font-semibold text-coffee-900 mb-3">
+        <h3 className="font-semibold text-neutral-900 mb-3">
           ⚡ Schneller Kontakt gewünscht?
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -84,7 +84,7 @@ Telefon: ${formData.phone}`
           </button>
           <a
             href="tel:+4912345678"
-            className="bg-primary-600 hover:bg-primary-700 text-white py-3 px-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
+            className="bg-accent-600 hover:bg-accent-700 text-white py-3 px-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
           >
             <FaPhone className="mr-2" />
             Sofort anrufen
@@ -104,7 +104,7 @@ Telefon: ${formData.phone}`
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Basis Informationen */}
         <div className="bg-gray-50 rounded-xl p-6 space-y-4">
-          <h3 className="font-semibold text-coffee-900 mb-4">Ihre Kontaktdaten</h3>
+          <h3 className="font-semibold text-neutral-900 mb-4">Ihre Kontaktdaten</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -175,7 +175,7 @@ Telefon: ${formData.phone}`
 
         {/* Projekt Details */}
         <div className="bg-blue-50 rounded-xl p-6 space-y-4">
-          <h3 className="font-semibold text-coffee-900 mb-4">Ihr Projekt</h3>
+          <h3 className="font-semibold text-neutral-900 mb-4">Ihr Projekt</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -232,7 +232,7 @@ Telefon: ${formData.phone}`
                 className="input-field"
               />
               {parseInt(formData.quantity) >= 3 && (
-                <p className="text-primary-600 text-sm mt-2 font-medium">
+                <p className="text-accent-600 text-sm mt-2 font-medium">
                   ✓ Mengenrabatt verfügbar!
                 </p>
               )}
@@ -314,7 +314,7 @@ Telefon: ${formData.phone}`
         <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
           <p className="text-sm text-gray-600">
             Mit dem Absenden des Formulars stimmen Sie unserer{' '}
-            <a href="/datenschutz" className="text-primary-600 hover:underline">
+            <a href="/datenschutz" className="text-accent-600 hover:underline">
               Datenschutzerklärung
             </a>{' '}
             zu. Ihre Daten werden vertraulich behandelt.

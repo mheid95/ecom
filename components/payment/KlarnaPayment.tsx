@@ -40,7 +40,7 @@ export default function KlarnaPayment({ amount, billingData, onSuccess }: Klarna
     <div className="space-y-6">
       <div className="text-center py-4">
         <SiKlarna className="text-6xl text-[#FFB3C7] mx-auto mb-4" />
-        <h3 className="text-xl font-bold text-coffee-900 mb-2">
+        <h3 className="text-xl font-bold text-neutral-900 mb-2">
           Flexibel mit Klarna bezahlen
         </h3>
         <p className="text-gray-600">
@@ -54,16 +54,16 @@ export default function KlarnaPayment({ amount, billingData, onSuccess }: Klarna
           onClick={() => setSelectedMethod('pay_now')}
           className={`w-full p-4 rounded-xl border-2 transition-all text-left ${
             selectedMethod === 'pay_now'
-              ? 'border-primary-600 bg-primary-50'
+              ? 'border-accent-600 bg-primary-50'
               : 'border-gray-200 hover:border-gray-300'
           }`}
         >
           <div className="flex items-center justify-between">
             <div>
-              <div className="font-semibold text-coffee-900">Sofort bezahlen</div>
+              <div className="font-semibold text-neutral-900">Sofort bezahlen</div>
               <div className="text-sm text-gray-600">Direkte Zahlung per Überweisung</div>
             </div>
-            <div className="text-2xl font-bold text-primary-600">
+            <div className="text-2xl font-bold text-accent-600">
               {new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(amount)}
             </div>
           </div>
@@ -73,16 +73,16 @@ export default function KlarnaPayment({ amount, billingData, onSuccess }: Klarna
           onClick={() => setSelectedMethod('pay_later')}
           className={`w-full p-4 rounded-xl border-2 transition-all text-left ${
             selectedMethod === 'pay_later'
-              ? 'border-primary-600 bg-primary-50'
+              ? 'border-accent-600 bg-primary-50'
               : 'border-gray-200 hover:border-gray-300'
           }`}
         >
           <div className="flex items-center justify-between">
             <div>
-              <div className="font-semibold text-coffee-900">Später bezahlen</div>
+              <div className="font-semibold text-neutral-900">Später bezahlen</div>
               <div className="text-sm text-gray-600">Rechnung mit 14 Tagen Zahlungsziel</div>
             </div>
-            <div className="text-primary-600 font-semibold">14 Tage</div>
+            <div className="text-accent-600 font-semibold">14 Tage</div>
           </div>
         </button>
 
@@ -90,18 +90,18 @@ export default function KlarnaPayment({ amount, billingData, onSuccess }: Klarna
           onClick={() => setSelectedMethod('slice')}
           className={`w-full p-4 rounded-xl border-2 transition-all text-left ${
             selectedMethod === 'slice'
-              ? 'border-primary-600 bg-primary-50'
+              ? 'border-accent-600 bg-primary-50'
               : 'border-gray-200 hover:border-gray-300'
           }`}
         >
           <div className="flex items-center justify-between">
             <div>
-              <div className="font-semibold text-coffee-900">In Raten zahlen</div>
+              <div className="font-semibold text-neutral-900">In Raten zahlen</div>
               <div className="text-sm text-gray-600">12 Monate, 0% Zinsen</div>
             </div>
             <div>
               <div className="text-sm text-gray-600">Ab</div>
-              <div className="text-xl font-bold text-primary-600">
+              <div className="text-xl font-bold text-accent-600">
                 {new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(parseFloat(monthlyPayment))}/Monat
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function KlarnaPayment({ amount, billingData, onSuccess }: Klarna
       <div className="text-center text-xs text-gray-600">
         <p>
           Mit Klärna bezahlen Sie sicher und flexibel.{' '}
-          <a href="#" className="text-primary-600 hover:underline">Mehr erfahren</a>
+          <a href="#" className="text-accent-600 hover:underline">Mehr erfahren</a>
         </p>
       </div>
     </div>
