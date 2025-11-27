@@ -25,7 +25,7 @@ export default function ProduktePage() {
       <section className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {allProducts.map((product) => (
-            <div key={product.id} className="card overflow-hidden">
+            <div key={product.id} className="card overflow-hidden flex flex-col">
               <div className="bg-gradient-to-br from-primary-100 to-primary-50 p-12 relative">
                 <FaCoffee className="text-accent-600 text-8xl mx-auto" />
                 <div className="absolute top-4 right-4 bg-neutral-900 text-white px-4 py-2 rounded-full text-sm font-semibold">
@@ -33,8 +33,8 @@ export default function ProduktePage() {
                 </div>
               </div>
 
-              <div className="p-8 space-y-6">
-                <div>
+              <div className="p-8 flex flex-col flex-grow">
+                <div className="mb-6">
                   <h2 className="text-2xl font-bold text-neutral-900 mb-2">
                     {product.name}
                   </h2>
@@ -43,11 +43,11 @@ export default function ProduktePage() {
                   </p>
                 </div>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed mb-6">
                   {product.longDescription}
                 </p>
 
-                <div>
+                <div className="mb-6">
                   <h3 className="font-semibold text-neutral-900 mb-3">Ausstattung:</h3>
                   <ul className="space-y-2">
                     {product.features.map((feature, idx) => (
@@ -59,7 +59,7 @@ export default function ProduktePage() {
                   </ul>
                 </div>
 
-                <div className="border-t border-gray-200 pt-6">
+                <div className="border-t border-gray-200 pt-6 mt-auto">
                   <div className="flex items-end justify-between mb-6">
                     <div>
                       <div className="text-3xl font-bold text-accent-600">

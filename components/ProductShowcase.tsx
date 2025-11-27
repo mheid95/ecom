@@ -22,7 +22,7 @@ export default function ProductShowcase() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         {showcaseProducts.map((product) => (
-          <div key={product.id} className="card group">
+          <div key={product.id} className="card group flex flex-col">
             <div className="relative bg-gradient-to-br from-primary-100 to-primary-50 p-8 h-48 flex items-center justify-center">
               <FaCoffee className="text-accent-600 text-7xl group-hover:scale-110 transition-transform duration-300" />
               <div className="absolute top-4 right-4 bg-neutral-900 text-white px-3 py-1 rounded-full text-xs font-semibold">
@@ -30,16 +30,16 @@ export default function ProductShowcase() {
               </div>
             </div>
 
-            <div className="p-6 space-y-4">
-              <h3 className="text-xl font-bold text-neutral-900">
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="text-xl font-bold text-neutral-900 mb-4">
                 {product.name}
               </h3>
 
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 {product.description}
               </p>
 
-              <ul className="space-y-2">
+              <ul className="space-y-2 mb-4">
                 {product.features.slice(0, 3).map((feature, idx) => (
                   <li key={idx} className="text-sm text-gray-700 flex items-center">
                     <span className="text-accent-600 mr-2">✓</span>
@@ -48,7 +48,7 @@ export default function ProductShowcase() {
                 ))}
               </ul>
 
-              <div className="pt-4 border-t border-gray-200">
+              <div className="pt-4 border-t border-gray-200 mt-auto">
                 <div className="text-2xl font-bold text-accent-600 mb-1">
                   {product.priceDisplay}
                 </div>
